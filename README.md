@@ -1,5 +1,4 @@
-# us-telephone-checker
-a code that checks for validity of a us phone number
+
 const result = document.getElementById("result-div");
 const buttons = document.getElementsByClassName("dial-btn");
 const input = document.getElementById("user-input");
@@ -23,17 +22,17 @@ const validatePhoneNumber = () => {
     const phoneNumber = input.value;
 
     
-    if (phoneNumber.trim() === "") {
+if (phoneNumber.trim() === "") {
         alert("Please enter a number.");
         return;
     }
 
     
-    const isValid = checkNumber(phoneNumber);
+const isValid = checkNumber(phoneNumber);
 
-    if (isValid) {
-        result.textContent = `Valid US number: ${phoneNumber}`;
-        result.style.color = "green";
+if (isValid) {
+    result.textContent = `Valid US number: ${phoneNumber}`;
+    result.style.color = "green";
     } else {
         result.textContent = `Invalid US number: ${phoneNumber}`;
         result.style.color = "red";
